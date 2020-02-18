@@ -1,6 +1,6 @@
 He resuelto el problema usando 2 respuestas:
 
-1. Cambiar el nombre del servidor.php a index.php (sin modificaciones)
+1. Cambiar el nombre del server.php (que está en la raíz del proyecto) a index.php (sin modificaciones)
 2. Copie el archivo .htaccess de la carpeta pública a la carpeta raíz
 3. Cambiando .htaccess un poco de la siguiente manera para las estadísticas:
 
