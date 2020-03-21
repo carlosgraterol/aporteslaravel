@@ -38,3 +38,24 @@ Opcionalmente, puede usar la fachada para un código más corto. Agregue esto a 
     	$pdf = \PDF::loadView('vehiculos.pdfvehiculo', $data);
         return $pdf->download('QRvehiculo-'.$id.'.pdf');
     }
+    
+#Ejemplo 2
+
+    public function seleccionadosPDF(Request $request){
+
+        if($request->input('postulante')){
+            $seleccionados = [];
+
+            foreach ($request->input('postulante') as $id) {
+                $user = User::find($id);
+                array_push($seleccionados, $user);
+            }
+
+            $pdf = \PDF::loadView('admin.empleos.seleccionadosPDF', compact('seleccionados'));
+            return $pdf->download('Postulantes.pdf');
+
+        }else{
+            return back()->with('status','¡Debes seleccionar a los postulantes!');
+        }
+
+    }
