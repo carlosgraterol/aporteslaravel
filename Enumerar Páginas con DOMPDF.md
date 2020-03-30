@@ -1,15 +1,15 @@
 #SALTOS DE PÁGINA
-	____________
+	
 	#Primer paso
-	____________
+	
 	<style>
 		.page-break {
 		    page-break-after: always;
 		}
 	</style>
-	_____________
+	
 	#Segundo paso
-	_____________
+	
 	<div class="page-break"></div>
 
 
