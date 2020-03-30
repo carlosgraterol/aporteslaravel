@@ -38,3 +38,7 @@ Opcionalmente, puede usar la fachada para un código más corto. Agregue esto a 
     	$pdf = \PDF::loadView('vehiculos.pdfvehiculo', $data);
         return $pdf->download('QRvehiculo-'.$id.'.pdf');
     }
+
+#Fuente
+
+	https://github.com/barryvdh/laravel-dompdf
