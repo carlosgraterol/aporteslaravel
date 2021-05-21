@@ -1,7 +1,7 @@
-#Instalar
+# Instalar
 
 composer require barryvdh/laravel-dompdf
-#Añadir
+# Añadir
 
 Después de actualizar Composer, agregue ServiceProvider a la matriz de proveedores en config / app.php
 
@@ -9,7 +9,7 @@ Barryvdh\DomPDF\ServiceProvider::class,
 Opcionalmente, puede usar la fachada para un código más corto. Agregue esto a sus fachadas:
 
 'PDF' => Barryvdh\DomPDF\Facade::class,
-#Ejemplo
+# Ejemplo
 
 public function pdfvehiculo($id){
 
